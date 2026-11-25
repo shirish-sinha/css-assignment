@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+        
+
+        .cont{
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+            background-image: url(assets/Title-Image.png);
+            height: 100vh;
+            width: 99vw;
+            background-repeat: no-repeat;
+        }
+
+        .sec{
+            color: #E5E9EA;
+            font-size: 15px;
+            font-weight:bolder;
+            margin-top: 15px;
+        }
+        .logo{           
+            margin-left: 20px;
+            margin-top: 15px;
+        }
+
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .top1{
+            display: flex;
+            gap: 20px;
+
+        }
+
+        .top2{
+            display: flex;
+            gap: 20px;
+        }
+
+        .sec2{
+            margin-top: 15px;
+        }
+
+        .text{
+            color: #E5E9EA;
+            margin-top: 10px;
+        }
+
+        .symbol{
+            position: relative;
+            top: 330px;
+            left: 55px;
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            width: 96%;
+            height: 100px;
+        }
+
+        .g1{
+            display: flex;
+            gap : 15px;
+            
+        }
+
+        .n1{
+            color: white;
+            font-size: 150px;
+            position: relative;
+            bottom: 180px;
+            right: 10px;
+        }
+
+        .btn{
+            position: relative;
+            display: flex;
+            gap: 15px;
+            position: relative;
+            bottom: 100px;
+        }
+
+        .play{
+            display: flex;
+            width: 80px;
+            height: 40px;
+        }
+
+        .more{
+            background-color: #ABB4B7;
+            display: flex;
+            color: white;
+            font-weight: bolder;
+            width: 110px;
+            opacity: 70%;
+        }
+
+        .btn img{
+            height: 20px;
+            margin: auto;
+
+        }
+
+        .btn h5{
+            margin: auto;
+            font-size: 15px;
+        }
+
+        .title{
+            font-size: 100px;
+            font-weight: bolder;
+            position: relative;
+            bottom: 50px;
+            color: white;
+        }
+
+        .btn button{
+            border-radius: 5px;
+        }
+
+        .main{
+            position: relative;
+            top: 610px;
+            padding: 25px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            
+        }
+
+        body{
+            background-color: #141414;
+            width: 99vw;
+        }
+        
+        .see{
+            display: flex;
+            gap: 10px;
+            color: white;
+            position: relative;
+            bottom: 120px;
+            padding-left: 20px;
+        }
+
+        .see img{
+            padding-top: 22px;
+        }
+
+
+        .top{
+            display: flex;
+            gap: 10px;
+            color: white;
+            position: relative;
+            bottom: 140px;
+            padding-left: 20px;
+        }
+
+        .top img{
+            padding-top: 22px;
+        }
+
+        .trend{
+            display: flex;
+            gap: 10px;
+            color: white;
+            position: relative;
+            bottom: 140px;
+            padding-left: 20px;
+        }
+
+        .trend img{
+            padding-top: 22px;
+        }
+
+        .sci{
+            display: flex;
+            gap: 10px;
+            color: white;
+            position: relative;
+            bottom: 120px;
+            padding-left: 20px;
+        }
+
+        .sci img{
+            padding-top: 22px;
+        }
+
+        .l1{
+            display: flex;
+            gap: 20px;
+            position: relative;
+            bottom: 140px;
+        }
+        .l2{
+            display: flex;
+            gap: 30px;
+            position: relative;
+            bottom: 150px;
+            padding-left: 20px;
+        }
+
+        .l3{
+            display: flex;
+            gap: 30px;
+            position: relative;
+            bottom: 150px;
+            padding: 10px;
+        }
+
+        .l4{
+            display: flex;
+            gap: 30px;
+            position: relative;
+            bottom: 150px;
+            padding: 10px;
+        }
+
+        .top10{
+            display: flex;
+            gap: 10px;
+            color: white;
+            position: relative;
+            bottom: 50px;
+        }
+
+        .top10 img{
+            padding-top: 22px;
+        }
+
+        .numsec img{
+            height: 170px;
+        }
+        .numsec{
+            display: flex;
+            gap: 0px;
+        }
+
+        .l4 img{
+            height: 140px;
+        }
+
+        .l3 img{
+            height: 140px;
+        }
+
+        .footer{
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .r1{
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer div{
+            color: #616161;
+            font-weight: 100;
+        }
+
+        .footer button{
+            padding: 5px;
+            background-color: #141414;
+            color: #616161;
+            outline: 2px solid;
+            outline-color: #616161;
+            border:none;
+        }
+
+        .c1{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .c2{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .c3{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .c4{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .r2{
+            display: flex;
+            gap:140px
+        }
+        .r3{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .whole{
+            margin: auto;
+        }
+
+        .plus{
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 15px;
+        }
+
+        .second{
+            display: flex;
+            gap: 20px;
+        }
+        .rubik-storm-regular {
+  font-family: "Rubik Storm", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+    
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <nav class="navbar">
+            <div class="top1">
+                <div><img  class="logo" src="assets/NetflixLogoSvg.png" alt="" height="20px" width="80px"></div>
+                <div class="sec">Start</div>
+                <div class="sec">Shows</div>
+                <div class="sec">Movies</div>
+                <div class="sec">New</div>
+                <div class="sec">My List</div>
+            </div>
+            <div class="top2">
+                <div class="sec2"><img src="assets/Search.png" alt=""></div>
+                <div class="sec2"><img src="assets/GiftBox.png" alt=""></div>
+                <div class="sec2"><img src="assets/NotificationBell.png" alt=""></div>
+                <div class="sec2"><img src="assets/ProfileIMG.png" alt=""></div>
+                <div class="sec2"><img src="assets/DownArrow.png" alt=""></div>
+            </div>
+        </nav>
+        <div class="symbol">
+        <span class="g1">
+            <img class="side" src="assets/Netflix_Symbol_RGB 1.png" alt="" height="50px" width="30px"><h3 class="text">SHOW</h3>
+        </span>
+        <span class="title">MAID</span>
+        <div class="plus"><img src="assets/Add.png" alt=""></div>
+        <span class="btn"><button class="play"><img src="assets/Play.png" alt=""><h5>Play</h5></button><button class="more"><img src="assets/Detail.png" alt=""><h5>More Info</h5></button></span>
+
+    </div>
+    <div class="second">
+    <div class="main">
+        <div class="see"><h3>See again</h3><img src="assets/ArrowRight.png" alt="" height="20px" width="20px"></div>
+        <div class="l1">
+            <div><img src="assets/section 1.1.png" alt=""></div>
+            <div><img src="assets/section 1.2.png" alt=""></div>
+            <div><img src="assets/section 1.3.png" alt=""></div>
+            <div><img src="assets/section 1.4.png" alt=""></div>
+            <div><img src="assets/section 1.5.png" alt=""></div>
+        </div>
+        <div class="top"><h3>Top 10 in your country</h3><img src="assets/ArrowRight.png" alt="" height="20px" width="20px"></div>
+        <div class="l2">
+            <div class="numsec"><img src="assets/Rank - 01.png" alt=""><img src="assets/section 2.1.png" alt=""></div>
+            <div class="numsec"><img src="assets/Rank - 02.png" alt=""><img src="assets/section 2.2.png" alt="" class="num"></div>
+            <div class="numsec"><img src="assets/Rank - 03.png" alt=""><img src="assets/section 2.3.png" alt="" class="num"></div>
+            <div class="numsec"><img src="assets/Rank - 04.png" alt=""><img src="assets/section 2.4.png" alt="" class="num"></div>
+            <div class="numsec"><img src="assets/Rank - 05.png" alt=""><img src="assets/section 2.5.png" alt="" class="num"></div>
+        </div>
+        <div class="trend"><h3>Trending Now</h3><img src="assets/ArrowRight.png" alt="" height="20px" width="20px"></div>
+        <div class="l3">
+            <div><img src="assets/section 3.1.png" alt=""></div>
+            <div><img src="assets/section 3.2.png" alt=""></div>
+            <div><img src="assets/section 3.3.png" alt=""></div>
+            <div><img src="assets/section 3.4.png" alt=""></div>
+            <div><img src="assets/section 3.5.png" alt=""></div>
+        </div>
+        <div class="sci"><h3>Sci-Fi Movies</h3><img src="assets/ArrowRight.png" alt="" height="20px" width="20px"></div>
+        <div class="l4">
+            <div><img src="assets/section 4.1.png" alt=""></div>
+            <div><img src="assets/section 4.2.png" alt=""></div>
+            <div><img src="assets/section 4.3.png" alt=""></div>
+            <div><img src="assets/section 4.4.png" alt=""></div>
+            <div><img src="assets/section 4.5.png" alt=""></div>
+        </div>
+        <div class="footer">
+            <div class="r1"><div><img src="assets/facebook.png" alt="" class="fimg"></div>
+            <div><img src="assets/instagram.png" alt="" class="fimg"></div>
+            <div><img src="assets/twitter.png" alt="" class="fimg"></div>
+            <div><img src="assets/youtube.png" alt="" class="fimg"></div></div>
+            <div class="r2">
+            <div class="c1">
+            <div>Seslendirme ve Alt Yazi</div>
+            <div>Medya Merkezi</div>
+            <div>Gizlilik</div>
+            <div>Bize Ulasin</div>
+            </div>
+            <div class="c2">
+                <div>Sesli Betimleme</div>
+                <div>Yatirimci iliskileri</div>
+                <div>Yasal Hukumler</div>
+            </div>
+            <div class="c3">
+                <div>Yardim Merkezi</div>
+                <div>Is Imkanlan</div>
+                <div>Cerez Tercihleri</div>
+            </div>
+            <div class="c4">
+                <div>Hediye Kartlan</div>
+                <div>Kulluanim Kosullan</div>
+                <div>Kurumsal Bilgiler</div>
+            </div>
+            </div>
+            <div class="r3">
+            <div><button>Hizmet Kodu</button></div>
+            <div>© 1997-2021 Netflix, Inc. {i-062d573aOeeO99242}</div>
+        </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

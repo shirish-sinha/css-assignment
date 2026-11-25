@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center
+        }
+        .container{
+            display: flex;
+        }
+        .cont{
+            height: 250px;
+            width: 350px;
+            margin: 25px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .card{
+            height: inherit;
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+        img{
+            width: 125px;
+        }
+        .score{
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cont">
+            <div class="card">
+                <img src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/01.superwars/super-1.png?raw=true" alt="">
+                <h3>Spiderman</h3>
+                <p class="score">12</p>
+            </div>
+            <div class="card">
+                <img src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/01.superwars/super-3.png?raw=true" alt="">
+                <h3>Wonder<br> Woman</h3>
+                <p class="score">30</p>
+            </div>
+        </div>
+        <div class="cont" style="justify-content: center;">
+            <p class="score" style="justify-self: center;">5 - 0</p>
+        </div>
+        <div class="cont">
+            <div class="card">
+                <img src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/01.superwars/super-2.png?raw=true" alt="">
+                <h3>Captain America</h3>
+                <p class="score">50</p>
+            </div>
+            <div class="card">
+                <img src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/01.superwars/super-4.png?raw=true" alt="">
+                <h3>Gem Woman</h3>
+                <p class="score">12</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

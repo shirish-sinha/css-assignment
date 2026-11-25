@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .main {
+            height: 750px;
+            width: 750px;
+            border: ;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+
+        .mainrow {
+            display: flex;
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 300px;
+            height: 300px;
+            border: 50px solid red;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+            box-sizing: border-box;
+        }
+
+        .column {
+            width: 150px;
+            height: 240px;
+            box-sizing: border-box;
+        }
+
+        .row {
+            height: 150px;
+            width: 750px;
+            box-sizing: border-box;
+        }
+
+        .boxrow {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .disc1 {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            border: 5px solid red;
+        }
+
+        .disc2 {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            border: 5px solid green;
+        }
+
+        .disc3 {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            border: 5px solid blue;
+        }
+
+        .disc4 {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            border: 5px solid yellow;
+        }
+
+        .colrow {
+            height: 50px;
+            background-color: white;
+            display: flex;
+        }
+
+        .colbox {
+            width: 50px;
+            border: 1px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+        }
+
+        .middle {
+            display: flex;
+        }
+
+        .row {
+            height: 150px;
+            width: 300px;
+        }
+
+        .rowrow {
+            height: 50px;
+            display: flex;
+        }
+
+        .center {
+            width: 150px;
+            height: 150px;
+            position: relative;
+        }
+
+        .green{
+            height: 150px;
+            width: 150px;
+            background-color: green;
+            clip-path: polygon(0% 0%, 50% 50%, 100% 0%);
+            position: absolute;
+        }
+
+        .yellow{
+            height: 150px;
+            width: 150px;
+            background-color: yellow;
+            clip-path: polygon(100% 0%, 50% 50%, 100% 100%);
+            position: absolute;
+
+        }
+
+        .blue{
+            height: 150px;
+            width: 150px;
+            background-color: blue;
+            clip-path: polygon(50% 50%, 0% 100%, 100% 100%);
+            position: absolute;
+
+        }
+
+        .red{
+            height: 150px;
+            width: 150px;
+            background-color: red;
+            clip-path: polygon(0% 100%, 50% 50%, 0% 0%);
+            position: absolute;
+        }
+
+        .rowbox {
+            width: 50px;
+            border: 1px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="mainrow">
+            <div class="box">
+                <div class="boxrow">
+                    <div class="disc1"></div>
+                    <div class="disc1"></div>
+                </div>
+                <div class="boxrow">
+                    <div class="disc1"></div>
+                    <div class="disc1"></div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="colrow">
+                    <div class="colbox"></div>
+                    <div class="colbox"></div>
+                    <div class="colbox"></div>
+                </div>
+                <div class="colrow">
+                    <div class="colbox"></div>
+                    <div class="colbox" style="background-color: green;"></div>
+                    <div class="colbox" style="background-color: green;">★</div>
+                </div>
+                <div class="colrow">
+                    <div class="colbox" style="background-color: green;">★</div>
+                    <div class="colbox" style="background-color: green;"></div>
+                    <div class="colbox"></div>
+                </div>
+                <div class="colrow">
+                    <div class="colbox"></div>
+                    <div class="colbox" style="background-color: green;"></div>
+                    <div class="colbox"></div>
+                </div>
+                <div class="colrow">
+                    <div class="colbox"></div>
+                    <div class="colbox" style="background-color: green;"></div>
+                    <div class="colbox"></div>
+                </div>
+                <div class="colrow">
+                    <div class="colbox"></div>
+                    <div class="colbox" style="background-color: green;"></div>
+                    <div class="colbox"></div>
+                </div>
+            </div>
+            <div class="box" style="border: 50px solid green;">
+                <div class="boxrow">
+                    <div class="disc2"></div>
+                    <div class="disc2"></div>
+                </div>
+                <div class="boxrow">
+                    <div class="disc2"></div>
+                    <div class="disc2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="row">
+                <div class="rowrow">
+                    <div class="rowbox"></div>
+                    <div class="rowbox" style="background-color: red;">★</div>
+                    <div class="rowbox"></div>
+                    <div class="rowbox"></div>
+                    <div class="rowbox"></div>
+                    <div class="rowbox"></div>
+                </div>
+                <div class="rowrow">
+                    <div class="rowbox"></div>
+                    <div class="rowbox" style="background-color: red;"></div>
+                    <div class="rowbox" style="background-color: red;"></div>
+                    <div class="rowbox" style="background-color: red;"></div>
+                    <div class="rowbox" style="background-color: red;"></div>
+                    <div class="rowbox" style="background-color: red;"></div>
+                </div>
+                <div class="rowrow">
+                    <div class="rowbox"></div>
+                    <div class="rowbox"></div>
+                    <div class="rowbox" style="background-color: red;">★</div>
+                    <div class="rowbox"></div>
+                    <div class="rowbox"></div>
+                    <div class="rowbox"></div>
+                </div>
+            </div>
+            <div class="center">
+                <div class="green"></div>
+                <div class="yellow"></div>
+                <div class="blue"></div>
+                <div class="red"></div>
+            </div>
+            <div class="row">
+                <div class="rowrow">
+                    <div class="rowbox"></div>
+                    <div class="rowbox"></div>
+                    <div class="rowbox"></div>
+                    <div class="rowbox" style="background-color: yellow;">★</div>
+                    <div class="rowbox"></div>
+                    <div class="rowbox"></div>
+                </div>
+                <div class="rowrow">
+                    <div class="rowbox" style="background-color: yellow;"></div>
+                    <div class="rowbox" style="background-color: yellow;"></div>
+                    <div class="rowbox" style="background-color: yellow;"></div>
+                    <div class="rowbox" style="background-color: yellow;"></div>
+                    <div class="rowbox" style="background-color: yellow;"></div>
+                    <div class="rowbox"></div>
+                </div>
+                <div class="rowrow">
+                    <div class="rowbox"></div>
+                    <div class="rowbox"></div>
+                    <div class="rowbox"></div>
+                    <div class="rowbox"></div>
+                    <div class="rowbox" style="background-color: yellow;">★</div>
+                    <div class="rowbox"></div>
+                </div>
+            </div>
+        </div>
+        <div class="mainrow">
+            <div class="box" style="border: 50px solid blue;">
+                <div class="boxrow">
+                    <div class="disc3"></div>
+                    <div class="disc3"></div>
+                </div>
+                <div class="boxrow">
+                    <div class="disc3"></div>
+                    <div class="disc3"></div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="colrow">
+                    <div class="colbox"></div>
+                    <div class="colbox" style="background-color: blue;"></div>
+                    <div class="colbox"></div>
+                </div>
+                <div class="colrow">
+                    <div class="colbox"></div>
+                    <div class="colbox" style="background-color: blue;"></div>
+                    <div class="colbox"></div>
+                </div>
+                <div class="colrow">
+                    <div class="colbox"></div>
+                    <div class="colbox" style="background-color: blue;"></div>
+                    <div class="colbox"></div>
+                </div>
+                <div class="colrow">
+                    <div class="colbox"></div>
+                    <div class="colbox" style="background-color: blue;"></div>
+                    <div class="colbox" style="background-color: blue;">★</div>
+                </div>
+                <div class="colrow">
+                    <div class="colbox" style="background-color: blue;">★</div>
+                    <div class="colbox" style="background-color: blue;"></div>
+                    <div class="colbox"></div>
+                </div>
+                <div class="colrow">
+                    <div class="colbox"></div>
+                    <div class="colbox"></div>
+                    <div class="colbox"></div>
+                </div>
+            </div>
+            <div class="box" style="border: 50px solid yellow;">
+                <div class="boxrow">
+                    <div class="disc4"></div>
+                    <div class="disc4"></div>
+                </div>
+                <div class="boxrow">
+                    <div class="disc4"></div>
+                    <div class="disc4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

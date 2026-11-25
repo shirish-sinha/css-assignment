@@ -1,0 +1,468 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        background-color: rgb(39, 38, 38);
+    }
+
+    .main {
+        display: grid;
+        height: 100vh;
+        grid-template: "sidebar search search" 130px
+            "sidebar mainarea mainarea" 400px
+            "sidebar mainarea mainarea" 230px / 0.6fr 2fr 3fr;
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+    }
+
+    .search {
+        grid-area: search;
+        width: inherit;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(24, 24, 24);
+        border-bottom: 1px solid #383838;
+    }
+
+    .mainarea {
+        grid-area: mainarea;
+    }
+
+    .sidebar {
+        display: grid;
+        align-items: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .aside {
+        display: flex;
+        gap: 10%;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .aside img:last-child {
+        margin-bottom: 20px;
+        align-items: center;
+    }
+
+    .aside img:last-child {
+        margin-top: 20px;
+    }
+
+    p {
+        color: aliceblue;
+        font-size: small;
+    }
+
+    img {
+        height: 28px;
+        width: 30px;
+    }
+
+    .YT {
+        width: 100px;
+        height: 25px;
+    }
+
+    hr {
+        color: white;
+    }
+
+    .mainarea {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 280px 280px 280px;
+        gap: 7px;
+        height: 100vh;
+        background-color: #121212;
+    }
+
+    .thumbnail img:first-child {
+        height: 170px;
+        width: 326px;
+    }
+
+    .title {
+        display: flex;
+        align-items: center;
+        gap: 5%;
+    }
+
+    .str {
+        font-size: 17px;
+    }
+
+    .details {
+        display: flex;
+        margin-top: -25px;
+        margin-left: 14%;
+    }
+
+    .details2 {
+        display: flex;
+        margin-top: -25px;
+        margin-left: 14%;
+    }
+
+    .details img:last-child {
+        height: 15px;
+        width: 15px;
+        margin-top: 12px;
+    }
+
+    .details p {
+        color: grey;
+    }
+
+    .details2 p {
+        color: grey;
+    }
+
+
+    .topbar {
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .searchbox {
+        display: flex;
+        width: 60%;
+        height: 46px;
+    }
+
+    .searchbox input {
+        width: 100%;
+        background-color: #121212;
+        border: 1px solid #383838;
+        color: white;
+        font-size: 17px;
+        padding-left: 12px;
+    }
+
+    .searchbox button {
+        width: 75px;
+        background-color: #303030;
+        color: white;
+        border: none;
+        font-size: 22px;
+    }
+
+    .topicons {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        color: white;
+        font-size: 23px;
+    }
+
+    .categories {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        height: 64px;
+        padding-left: 15px;
+        border-top: 1px solid #383838;
+    }
+
+    .categories button {
+        background-color: #303030;
+        color: white;
+        border: 1px solid #444;
+        border-radius: 25px;
+        padding: 10px 17px;
+        white-space: nowrap;
+        font-size: 14px;
+    }
+
+    .categories button:first-child {
+        background-color: white;
+        color: black;
+    }
+
+</style>
+
+<body>
+
+    <div class="main">
+
+        <div class="sidebar">
+
+            <div class="aside"><img
+                    src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/hambarger.png?raw=true"
+                    alt=""><img
+                    src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Youtube%20logo.png?raw=true"
+                    alt="" class="YT"></div>
+
+            <div class="aside"><img
+                    src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/home.png?raw=true"
+                    alt="" height="35px">
+                <p>Home</p>
+            </div>
+
+            <div class="aside"><img
+                    src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/explore.png?raw=true"
+                    alt="">
+                <p>Explores</p>
+            </div>
+
+            <div class="aside"><img
+                    src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/shorts.png?raw=true"
+                    alt="">
+                <p>Shorts</p>
+            </div>
+
+            <div class="aside"><img
+                    src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/subscription.png?raw=true"
+                    alt="">
+                <p>Subscriptions</p>
+            </div>
+
+            <hr>
+
+            <div class="aside"><img
+                    src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/library.png?raw=true"
+                    alt="">
+                <p>Library</p>
+            </div>
+
+            <div class="aside"><img
+                    src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/history.png?raw=true"
+                    alt="">
+                <p>History</p>
+            </div>
+
+            <div class="aside"><img
+                    src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/your_video.png?raw=true"
+                    alt="">
+                <p>Your videos</p>
+            </div>
+
+            <div class="aside"><img
+                    src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/watch_later.png?raw=true"
+                    alt="">
+                <p>Watch later</p>
+            </div>
+
+            <div class="aside"><img
+                    src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/liked.png?raw=true"
+                    alt="">
+                <p>Liked videos</p>
+            </div>
+
+            <div class="aside"><img
+                    src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/down_arrow.png?raw=true"
+                    alt="">
+                <p>Show more</p>
+            </div>
+
+            <hr>
+
+            <div class="asideS">
+                <p>SUBSCRIPTIONS</p>
+            </div>
+
+            <div class="aside"><img
+                    src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Ellipse%201.png?raw=true"
+                    alt="">
+                <p>Nadir On The Go</p>
+            </div>
+
+            <div class="aside"><img
+                    src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Ellipse%201%20(1).png?raw=true"
+                    alt="">
+                <p>Coke Studio Bangla</p>
+            </div>
+
+            <div class="aside"><img
+                    src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Ellipse%201%20(2).png?raw=true"
+                    alt="">
+                <p>MKBHD</p>
+            </div>
+
+            <div class="aside"><img
+                    src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Ellipse%201%20(3).png?raw=true"
+                    alt="">
+                <p>Figma</p>
+            </div>
+
+            <div class="aside"><img
+                    src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Ellipse%201%20(4).png?raw=true"
+                    alt="">
+                <p>ATC Android ToToC...</p>
+            </div>
+
+            <div class="aside"><img
+                    src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Ellipse%201%20(5).png?raw=true"
+                    alt="">
+                <p>Alux.com</p>
+            </div>
+
+        </div>
+
+
+
+        <div class="search">
+
+            <div class="topbar">
+
+                <div class="searchbox">
+                    <input type="text" placeholder="Search">
+                    <button><img src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/search.png?raw=true" alt=""></button>
+                    
+                </div>
+
+            
+
+            </div>
+
+            <div class="categories">
+                <button>All</button>
+                <button>Cook Studio</button>
+                <button>UX</button>
+                <button>Case Study</button>
+                <button>Music</button>
+                <button>Bangla Lofi</button>
+                <button>Tour</button>
+                <button>Saintmartin</button>
+                <button>Tech</button>
+                <button>iPhone 13</button>
+                <button>User Interface Design</button>
+                <button>Computer</button>
+            </div>
+
+        </div>
+        <div class="mainarea">
+            <div class="videos">
+                <div class="thumbnail"><img src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Thumbnail-8.png?raw=true" alt=""></div>
+                <div class="title"><img src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Ellipse%201%20(1).png?raw=true" alt="">
+                    <p class="str">Bulbuli | Coke Studio Bangla | Season One | Ritu Raj X Nandita</p>
+                </div>
+                <div class="details"><p>Coke Studio Bangla</p><img src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/verified.png?raw=true" alt="">
+                </div>
+                <div class="details2"><p>1.5M views &bull; 2 days ago</p></div>
+            </div>
+
+
+            <div class="videos">
+                <div class="thumbnail"><img src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Thumbnail-9.png?raw=true" alt=""></div>
+                <div class="title"><img src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Ellipse%201%20(4).png?raw=true" alt="">
+                    <p class="str">Infinix Note 12 : AMOLED Helio G88 SoC!</p>
+                </div>
+                <div class="details"><p>ATC Android ToTo Company</p><img src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/verified.png?raw=true" alt="">
+                </div>
+                <div class="details2"><p>4.2M views &bull; 2 days ago</p></div>
+            </div>
+
+
+            <div class="videos">
+                <div class="thumbnail"><img src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Thumbnail-10.png?raw=true" alt=""></div>
+                <div class="title"><img src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Ellipse%201%20(3).png?raw=true" alt="">
+                    <p class="str">My first UX Design case study - This got me my first job.</p>
+                </div>
+                <div class="details"><p>Saptarshi Prakash</p>
+                </div>
+                <div class="details2"><p>4.8K views &bull; 1 year ago</p></div>
+            </div>
+
+
+            <div class="videos">
+                <div class="thumbnail"><img src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Thumbnail-11.png?raw=true" alt=""></div>
+                <div class="title"><img src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Ellipse%201%20(1).png?raw=true" alt="">
+                    <p class="str">My Mix</p>
+                </div>
+                <div class="details"><p>Lopamudra Mitra, Anupam Roy, and more</p>
+                </div>
+                <div class="details2"><p></p></div>
+            </div>
+
+
+            <div class="videos">
+                <div class="thumbnail"><img src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Thumbnail-4.png?raw=true" alt=""></div>
+                <div class="title"><img src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Ellipse%201%20(3).png?raw=true" alt="">
+                    <p class="str">UX Design - What is it? (From AJ & Smart)</p>
+                </div>
+                <div class="details"><p>AJ&Smart</p><img src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/verified.png?raw=true" alt="">
+                </div>
+                <div class="details2"><p>150K views &bull; 3 years ago</p></div>
+            </div>
+
+
+            <div class="videos">
+                <div class="thumbnail"><img src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Thumbnail-5.png?raw=true" alt=""></div>
+                <div class="title"><img src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Ellipse%201%20(1).png?raw=true" alt="">
+                    <p class="str">Mix - Mombati | Mohon Sharif | Dhakaiya Dose | Mahib Ahsan ft Anika</p>
+                </div>
+                <div class="details"><p>Mohon Sharif, Odd Signature, Shayan Chowdhury Arnob, and more</p>
+                </div>
+                <div class="details2"><p>Music Mix</p></div>
+            </div>
+
+
+            <div class="videos">
+                <div class="thumbnail"><img src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Thumbnail-6.png?raw=true" alt=""></div>
+                <div class="title"><img src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Ellipse%201.png?raw=true" alt="">
+                    <p class="str">48 VISA-FREE Countries</p>
+                </div>
+                <div class="details"><p>Nadir On The Go</p>
+                </div>
+                <div class="details2"><p>1.7M views &bull; 1 year ago</p></div>
+            </div>
+
+
+            <div class="videos">
+                <div class="thumbnail"><img src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Thumbnail-7.png?raw=true" alt=""></div>
+                <div class="title"><img src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Ellipse%201%20(3).png?raw=true" alt="">
+                    <p class="str">14 Advanced Tips to Design FASTER in Figma</p>
+                </div>
+                <div class="details"><p>Mizko</p><img src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/verified.png?raw=true" alt="">
+                </div>
+                <div class="details2"><p>53K views &bull; 1 year ago</p></div>
+            </div>
+
+
+            <div class="videos">
+                <div class="thumbnail"><img src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Thumbnail.png?raw=true" alt=""></div>
+                
+            </div> 
+
+
+            <div class="videos">
+                <div class="thumbnail"><img src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Thumbnail-1.png?raw=true" alt=""></div>
+               
+               
+                
+            </div>
+
+
+            <div class="videos">
+                <div class="thumbnail"><img src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Thumbnail-2.png?raw=true" alt=""></div>
+                
+            </div>
+
+
+            <div class="videos">
+                <div class="thumbnail"><img src="https://github.com/codinggita/CGxSU_Semester_1/blob/main/Semester_1/html_css_js(sem_01)/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Thumbnail-3.png?raw=true" alt=""></div>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

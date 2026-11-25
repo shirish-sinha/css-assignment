@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+span,p{
+    color: white;
+}
+.navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:#121921;
+}
+.address{
+    display: flex;
+}
+.address img{
+    padding-top: 8%;
+}
+.address div p span{
+    font-weight: lighter;
+    color: gray;
+}
+.search{
+    display: flex;
+    width: 50%;
+    height: 30px;
+}
+.search input{
+    border: none;
+    width: 100%;
+}
+.search div{
+    display: flex;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 5px;
+    font-size: small;
+    gap:8px;
+}
+.search div p{
+    color: black;
+}
+.search .imgg{
+    background-color:#FBBE67;
+    padding: 1%;
+    width: 3%;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.flag{
+    display: flex;
+    align-items: flex-end;
+}
+.cart{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    display: flex;
+}
+.signin span{
+    font-size: 12px;
+}
+.navigationlinks{
+    background-color:#243040;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    height: 40px;
+}
+.all{
+    display: flex;
+    padding-left: 20%;
+    margin-right: 20px;
+    width: 100%;
+    gap:5%;
+}
+.lion img{
+    height: 40px;
+    display: flex;
+    margin-left: 90px
+}
+.u{
+    display: flex;
+    font-weight: bolder;
+    position: relative;
+    top:9px;
+    right: 32px;
+}
+.prime{
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+    font-size: large;
+    justify-content: center;
+}
+.background{
+    background-image: url(./assets/background\ picture.png);
+    width:100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.arrows{
+    display: flex;
+    gap:95%;
+    padding-left: 20px;
+    position: relative;
+    top:100px;
+}
+.productcards{
+    background-color: white;
+    margin-top: 250px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 20px;
+    width: max-content;
+}
+.productcards p{
+    color: black;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+}
+.productimage{
+    display: flex;
+    gap:1%;
+}
+.card h2{
+    font-weight: normal;
+    width: 300px;
+}
+.productcard{
+    display: flex;
+    gap:1%;
+}
+.signin-section{
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 340px;
+}
+.signin-card{
+    background-color: white;
+    padding: 20px;
+    
+}
+.signin-card h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    line-height: 1.3;
+}
+.signin-card button{
+    width: 100%;
+    background-color: #FFD814;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 0;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+}
+.laptop-banner{
+    width: 100%;
+}
+.laptop-banner img{
+    width: 100%;
+    display: block;
+}
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="logo"><img src="./assets/logo.png"></div>
+            <div class="address"><img src="./assets/location.png" width="25px" height="25px">
+                <div>
+                    <p><span>Hello</span><br>Select Your Address</p>
+                </div>
+            </div>
+            <div class="search">
+                <div>
+                    <p>All</p><img src="./assets/down arrow.png" width="10px" height="5px">
+                </div><input type="search"><img class="imgg" src="./assets/search icon.png" width="10px"
+                    height="max-content">
+            </div>
+            <div class="flag"><img src="./assets/indian flag.png"> <img src="./assets/down arrow.png"></div>
+            <div class="signin">
+                <p><span>Hello, Sign in</span><br>Account & Lists<img src="./assets/down arrow.png"></p>
+            </div>
+            <div class="returns">
+                <p><span>Returns</span><br>& Orders</p>
+            </div>
+            <div class="cart"><img src="./assets/cart icon.png">
+                <p>Cart</p>
+            </div>
+        </div>
+        <nav class="navigationlinks">
+            <div class="nav">
+                <div class="all"><img src="./assets/ham burger icon.png" width="20px" height="20px">
+                    <p>All</p>
+                </div>
+            </div>
+            <div class="nav">
+                <p>Best Sellers</p>
+            </div>
+            <div class="nav">
+                <p>Mobiles</p>
+            </div>
+            <div class="nav">
+                <p>Customer Service</p>
+            </div>
+            <div class="nav">
+                <p>Today's Deals</p>
+            </div>
+            <div class="nav">
+                <p>Fashion</p>
+            </div>
+            <div class="nav">
+                <p>Electronics</p>
+            </div>
+            <div class="nav">
+                <p>Books</p>
+            </div>
+            <div class="nav">
+                <p>Prime</p>
+            </div>
+            <div class="nav">
+                <p>New Releases</p>
+            </div>
+            <div class="nav">
+                <p>Home & Kitchen</p>
+            </div>
+            <div class="nav">
+                <p>Amazon Pay</p>
+            </div>
+            <div class="lion"><img src="./assets/lion.png"></div>
+            <div class="primeday">
+                <p class="prime">Prime day</p><img src="./assets/amazon design.png">
+            </div>
+            <div class="u">
+                <p>23<sup>rd</sup>-24<sup>th</sup>July</p>
+            </div>
+            <img src="./assets/top bar right.png">
+        </nav>
+        <main class="mainbody">
+            <div class="background">
+                <div class="arrows">
+                    <div><img src="./assets/left arrow.png"></div>
+                    <div><img src="./assets/right arrow.png"></div>
+                </div>
+                <div class="productcard">
+                    <div class="productcards">
+                        <div class="card">
+                            <h2>Upgrade your home | Amazon Brands & more</h2>
+                            <div class="productimage">
+                                <div><img src="./assets/image 17.png"><p>Smart LED TVs</p></div>
+                                <div><img src="./assets/image 18.png"><p>Appliances</p></div>
+                            </div>
+                            <div class="productimage">
+                                <div><img src="./assets/image 19.png"><p>Furniture</p></div>
+                                <div><img src="./assets/image 20.png"><p>Kitchen products</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productcards">
+                        <div class="card">
+                            <h2>Revamp your home in style</h2>
+                            <div class="productimage">
+                                <div><img src="./assets/image 25.png"><p>Bedsheets,curtain &<br>more</p></div>
+                                <div><img src="./assets/image 24.png"><p>Home decoration</p></div>
+                            </div>
+                            <div class="productimage">
+                                <div><img src="./assets/image 22.png"><p>Home storage</p></div>
+                                <div><img src="./assets/image 21.png"><p>Lighting solutions</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productcards">
+                        <div class="card">
+                            <h2>Up to 70% Off| Clearance store</h2>
+                            <div class="productimage">
+                                <div><img src="./assets/image 26.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="signin-section">
+                        <div class="signin-card">
+                            <h2>Sign in for your best experience</h2>
+                            <button>Sign in securely</button>
+                        </div>
+                        <div class="laptop-banner">
+                            <img src="./assets/image 28.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
