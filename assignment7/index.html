@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .banner {
+            height: 54vh;
+            background-size: 100vw;
+            background-image: url(assets/kw-background.png);
+            background-repeat: no-repeat;
+            font-size: 2.8vw;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            padding-left: 5%;
+            justify-content: center;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 5vw;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            width: 150px;
+            gap: 10px;
+        }
+
+        .books {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+
+        .cont1 {
+            margin: 5%;
+            margin-top: 10%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .game {
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+            gap: 10px;
+        }
+        .craft{
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+            gap: 10px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <div class="nav">
+            <div><img src="assets/kw-logo.png" alt="" height="30px"></div>
+            <div style="display: flex; align-items: center; font-weight: 700;">
+                <div><img src="assets/cart-icon.png" alt="" height="30px"></div>
+                <div>Cart items(0)</div>
+            </div>
+        </div>
+        <div class="banner">
+            <h1>Shop.</h1>
+            <h1>Have fun.</h1>
+            <h1>Repeat.</h1>
+            <h4 style="font-size: 2vw; margin-top: 20px;">#NewAndNow</h4>
+        </div>
+    </div>
+    <div class="container">
+        <div class="cont1">
+            <h3>Discover New Books</h3>
+            <div class="books">
+                <div class="card">
+                    <img src="assets/book1.png" alt="">
+                    <div style="font-weight: 600;">This was our pact</div>
+                    <div style="font-size: 12px;">Ryan Andrews</div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div style="font-weight: 600;">$7.49</div>
+                        <div
+                            style="border-radius: 5px; justify-content: space-between; padding: 3px 5px; display: flex; background-color: #6196FF; color: white; align-items: center; justify-content: space-between; gap: 5px;">
+                            <p>Add</p> <img src="assets/cart-icon-white.png" alt="" height="15px">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/book2.png" alt="">
+                    <div style="font-weight: 600;">The Famous Five</div>
+                    <div style="font-size: 12px;">Ryan Andrews</div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div style="font-weight: 600;">$7.49</div>
+                        <div
+                            style="border-radius: 5px; justify-content: space-between; padding: 3px 5px; display: flex; background-color: #6196FF; color: white; align-items: center; justify-content: space-between; gap: 5px;">
+                            <p>Add</p> <img src="assets/cart-icon-white.png" alt="" height="15px">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/book3.png" alt="">
+                    <div style="font-weight: 600;">Matilda</div>
+                    <div style="font-size: 12px;">Ryan Andrews</div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div style="font-weight: 600;">$7.49</div>
+                        <div
+                            style="border-radius: 5px; justify-content: space-between; padding: 3px 5px; display: flex; background-color: #6196FF; color: white; align-items: center; justify-content: space-between; gap: 5px;">
+                            <p>Add</p> <img src="assets/cart-icon-white.png" alt="" height="15px">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/book4.png" alt="">
+                    <div style="font-weight: 600;">Harry Potter</div>
+                    <div style="font-size: 12px;">Ryan Andrews</div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div style="font-weight: 600;">$7.49</div>
+                        <div
+                            style="border-radius: 5px; justify-content: space-between; padding: 3px 5px; display: flex; background-color: #6196FF; color: white; align-items: center; justify-content: space-between; gap: 5px;">
+                            <p>Add</p> <img src="assets/cart-icon-white.png" alt="" height="15px">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/book5.png" alt="">
+                    <div style="font-weight: 600;">For Young Readers</div>
+                    <div style="font-size: 12px;">Ryan Andrews</div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div style="font-weight: 600;">$7.49</div>
+                        <div
+                            style="border-radius: 5px; justify-content: space-between; padding: 3px 5px; display: flex; background-color: #6196FF; color: white; align-items: center; justify-content: space-between; gap: 5px;">
+                            <p>Add</p> <img src="assets/cart-icon-white.png" alt="" height="15px">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/book6.png" alt="">
+                    <div style="font-weight: 600;">Wimpy Kid - DIY</div>
+                    <div style="font-size: 12px;">Ryan Andrews</div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div style="font-weight: 600;">$7.49</div>
+                        <div
+                            style="border-radius: 5px; justify-content: space-between; padding: 3px 5px; display: flex; background-color: #6196FF; color: white; align-items: center; justify-content: space-between; gap: 5px;">
+                            <p>Add</p> <img src="assets/cart-icon-white.png" alt="" height="15px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cont1">
+            <h3>Discover New Games</h3>
+            <div class="books">
+                <div class="game">
+                    <img src="assets/dart-board.png" alt="">
+                    <div style="font-weight: 600;">Wimpy Kid - DIY</div>
+                    <div style="font-size: 12px;">Ryan Andrews</div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div style="font-weight: 600;">$7.49</div>
+                        <div
+                            style="border-radius: 5px; justify-content: space-between; padding: 3px 5px; display: flex; background-color: #6196FF; color: white; align-items: center; justify-content: space-between; gap: 5px;">
+                            <p>Add</p> <img src="assets/cart-icon-white.png" alt="" height="15px">
+                        </div>
+                    </div>
+                </div>
+                <div class="game">
+                    <img src="assets/connect-four.png" alt="">
+                    <div style="font-weight: 600;">Wimpy Kid - DIY</div>
+                    <div style="font-size: 12px;">Ryan Andrews</div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div style="font-weight: 600;">$7.49</div>
+                        <div
+                            style="border-radius: 5px; justify-content: space-between; padding: 3px 5px; display: flex; background-color: #6196FF; color: white; align-items: center; justify-content: space-between; gap: 5px;">
+                            <p>Add</p> <img src="assets/cart-icon-white.png" alt="" height="15px">
+                        </div>
+                    </div>
+                </div>
+                <div class="game">
+                    <img src="assets/jenga.png" alt="">
+                    <div style="font-weight: 600;">Wimpy Kid - DIY</div>
+                    <div style="font-size: 12px;">Ryan Andrews</div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div style="font-weight: 600;">$7.49</div>
+                        <div
+                            style="border-radius: 5px; justify-content: space-between; padding: 3px 5px; display: flex; background-color: #6196FF; color: white; align-items: center; justify-content: space-between; gap: 5px;">
+                            <p>Add</p> <img src="assets/cart-icon-white.png" alt="" height="15px">
+                        </div>
+                    </div>
+                </div>
+                <div class="game">
+                    <img src="assets/monopoly.png" alt="">
+                    <div style="font-weight: 600;">Wimpy Kid - DIY</div>
+                    <div style="font-size: 12px;">Ryan Andrews</div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div style="font-weight: 600;">$7.49</div>
+                        <div
+                            style="border-radius: 5px; justify-content: space-between; padding: 3px 5px; display: flex; background-color: #6196FF; color: white; align-items: center; justify-content: space-between; gap: 5px;">
+                            <p>Add</p> <img src="assets/cart-icon-white.png" alt="" height="15px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cont1">
+            <h3>Handmade with love</h3>
+            <div class="books">
+                <div class="craft">
+                    <img src="assets/bookmarks.png" alt="">
+                    <div style="font-weight: 600;">Bookmarks</div>
+                    <div style="font-size: 12px;">Handmade with love</div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div style="font-weight: 600;">$7.49</div>
+                        <div
+                            style="border-radius: 5px; justify-content: space-between; padding: 3px 5px; display: flex; background-color: #6196FF; color: white; align-items: center; justify-content: space-between; gap: 5px;">
+                            <p>Add</p> <img src="assets/cart-icon-white.png" alt="" height="15px">
+                        </div>
+                    </div>
+                </div>
+                <div class="craft">
+                    <img src="assets/birthday-card.png" alt="">
+                    <div style="font-weight: 600;">Birthday card</div>
+                    <div style="font-size: 12px;">Handmade with love</div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div style="font-weight: 600;">$7.49</div>
+                        <div
+                            style="border-radius: 5px; justify-content: space-between; padding: 3px 5px; display: flex; background-color: #6196FF; color: white; align-items: center; justify-content: space-between; gap: 5px;">
+                            <p>Add</p> <img src="assets/cart-icon-white.png" alt="" height="15px">
+                        </div>
+                    </div>
+                </div>
+                <div class="craft">
+                    <img src="assets/stuffed-toy.png" alt="">
+                    <div style="font-weight: 600;">Stuffed toys</div>
+                    <div style="font-size: 12px;">Handmade with love</div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div style="font-weight: 600;">$7.49</div>
+                        <div
+                            style="border-radius: 5px; justify-content: space-between; padding: 3px 5px; display: flex; background-color: #6196FF; color: white; align-items: center; justify-content: space-between; gap: 5px;">
+                            <p>Add</p> <img src="assets/cart-icon-white.png" alt="" height="15px">
+                        </div>
+                    </div>
+                </div>
+                <div class="craft">
+                    <img src="assets/dream-catcher.png" alt="">
+                    <div style="font-weight: 600;">Dream catcher drawing</div>
+                    <div style="font-size: 12px;">Handmade with love</div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div style="font-weight: 600;">$7.49</div>
+                        <div
+                            style="border-radius: 5px; justify-content: space-between; padding: 3px 5px; display: flex; background-color: #6196FF; color: white; align-items: center; justify-content: space-between; gap: 5px;">
+                            <p>Add</p> <img src="assets/cart-icon-white.png" alt="" height="15px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
